@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-add,
+.btn-subtract {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Circle shape */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-add {
+    background-color: green; /* Green color for "+" button */
+}
+
+.btn-subtract {
+    background-color: red; /* Red color for "-" button */
+}
+
+.btn-subtract::after {
+  content: "-"; /* Plus symbol content */
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.btn-add::after {
+  content: "+"; /* Plus symbol content */
+  font-weight: bold;
+  color: white;
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
